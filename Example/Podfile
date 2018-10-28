@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'KLAlert_Example' do
+  pod 'KLAlert', :path => '../'
+
+  target 'KLAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
