@@ -1,0 +1,6 @@
+framework module KLAlert {
+  umbrella header "KLAlert-umbrella.h"
+
+  export *
+  module * { export * }
+}

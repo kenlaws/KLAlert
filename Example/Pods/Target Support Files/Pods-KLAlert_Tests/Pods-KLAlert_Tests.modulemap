@@ -1,0 +1,6 @@
+framework module Pods_KLAlert_Tests {
+  umbrella header "Pods-KLAlert_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

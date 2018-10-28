@@ -1,0 +1,16 @@
+PODS:
+  - KLAlert (0.1.0)
+
+DEPENDENCIES:
+  - KLAlert (from `../`)
+
+EXTERNAL SOURCES:
+  KLAlert:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KLAlert: 0fa20a2e04a7c1a2ef6cb6e094e5579e4407e2cb
+
+PODFILE CHECKSUM: 6d6ed5c41d0db2db816e13e602c5bf45639c9cfd
+
+COCOAPODS: 1.6.0.beta.1
