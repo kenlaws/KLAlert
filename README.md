@@ -18,7 +18,8 @@ Alert.withButtonsAndCompletion(title: "Confirm",
 				}
 ```
 ## Current Version: 1.0.7
-A complete restructuring. 
+Added cancel to `withButtonsAndCompletion`.
+Added an example for its use. 
 
 ## Installation
 ### [CocoaPods](http://cocoapods.org/)
