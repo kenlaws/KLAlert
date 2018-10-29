@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'KLAlert'
+  s.name             = 'klAlert'
   s.version          = '1.0.6'
   s.summary          = 'Simple one call alerts with completions in Swift.'
 

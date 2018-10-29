@@ -44,7 +44,7 @@
 		680DCE40A2485CAAEEB37A21 /* Pods_KLAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLAlert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		816314AC7F2746FF75818E56 /* Pods_KLAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F92CC167D5ADBF2EA294C61 /* Pods-KLAlert_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLAlert_Tests.release.xcconfig"; path = "Target Support Files/Pods-KLAlert_Tests/Pods-KLAlert_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		B707E2F2C5AFFADC9A5F0BB0 /* KLAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KLAlert.podspec; path = ../KLAlert.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B707E2F2C5AFFADC9A5F0BB0 /* klAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = klAlert.podspec; path = ../klAlert.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C2568CAE0FECE5B48013F7D1 /* Pods-KLAlert_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLAlert_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KLAlert_Tests/Pods-KLAlert_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F7CF41AD47C8244F684152F5 /* Pods-KLAlert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLAlert_Example.debug.xcconfig"; path = "Target Support Files/Pods-KLAlert_Example/Pods-KLAlert_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,7 +143,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				B707E2F2C5AFFADC9A5F0BB0 /* KLAlert.podspec */,
+				B707E2F2C5AFFADC9A5F0BB0 /* klAlert.podspec */,
 				3BA55AF790D4C8BA2FFFDB62 /* README.md */,
 				0B1F3EE7043F8F1C7B0AC458 /* LICENSE */,
 			);

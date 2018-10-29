@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import KLAlert
+import klAlert
 
 class ViewController: UIViewController {
 
