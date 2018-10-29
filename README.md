@@ -10,16 +10,16 @@
 UIAlertController is nice and all, but it means having to write a few lines of code where before one call was often all you'd need. klAlert is a series of static functions that let you create and handle the results of a modern alert in just one call:
 ```	
 Alert.withButtonsAndCompletion(title: "Question",
-									msg: "Are you OK?",
-									buttons: ["I'm OK","I'm Not OK"]) { (index) in
-										if index == 0 {
-											// The user is fine
-										} else {
-											// Help the user
-										}
-									}
+				msg: "Are you OK?",
+				buttons: ["I'm OK","I'm Not OK"]) { (index) in
+					if index == 0 {
+						// The user is fine
+					} else {
+						// Help the user
+					}
+				}
 ```
-## Current Version: 1.0.5
+## Current Version: 1.0.6
 A complete restructuring. 
 
 ## Installation
