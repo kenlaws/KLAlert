@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## KLAlert
+## klAlert
 
 Copyright (c) 2018 kenlaws <ken@kenlaws.com>
 

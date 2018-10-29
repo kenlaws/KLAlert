@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_KLAlert_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_KLAlert_TestsVersionString[];
+FOUNDATION_EXPORT double Pods_klAlert_TestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_klAlert_TestsVersionString[];
 

@@ -1,16 +1,16 @@
 PODS:
-  - KLAlert (1.0.5)
+  - klAlert (1.0.7)
 
 DEPENDENCIES:
-  - KLAlert (from `../`)
+  - klAlert (from `../`)
 
 EXTERNAL SOURCES:
-  KLAlert:
+  klAlert:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KLAlert: 02807ddffe3f5e9b3a32a4722a3bfbc665e70fc5
+  klAlert: 7ef060e25ea48178c328127a8cca21cee673f0bd
 
-PODFILE CHECKSUM: 6d6ed5c41d0db2db816e13e602c5bf45639c9cfd
+PODFILE CHECKSUM: 1d0bbd19b418ca2f7f862406c1be3512b09f4312
 
 COCOAPODS: 1.6.0.beta.1

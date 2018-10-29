@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'klAlert'
-  s.version          = '1.0.6'
+  s.version          = '1.0.7'
   s.summary          = 'Simple one call alerts with completions in Swift.'
 
 # This description is used to generate tags and improve search results.
@@ -18,20 +18,20 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  UIAlertController is pretty cool, but it means having to write a few lines of code where before one call was often all you'd need. KLAlert is a series of static functions that let you create and handle the results of a modern alert in just one call.
+  UIAlertController is pretty cool, but it means having to write a few lines of code where before one call was often all you'd need. klAlert is a series of static functions that let you create and handle the results of a modern alert in just one call.
                        DESC
 
-  s.homepage         = 'https://github.com/kenlaws/KLAlert'
+  s.homepage         = 'https://github.com/kenlaws/klAlert'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'kenlaws' => 'pods@kenlaws.com' }
-  s.source           = { :git => 'https://github.com/kenlaws/KLAlert.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/kenlaws/klAlert.git', :tag => s.version.to_s }
   s.social_media_url   = "https://twitter.com/kenlaws"
 
   s.swift_version = '4.2'
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'KLAlert/Classes/**/*'
+  s.source_files = 'klAlert/Classes/**/*'
   
   # s.resource_bundles = {
   #   'KLAlert' => ['KLAlert/Assets/*.png']

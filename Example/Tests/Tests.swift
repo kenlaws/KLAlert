@@ -1,5 +1,5 @@
 import XCTest
-import KLAlert
+import klAlert
 
 class Tests: XCTestCase {
     

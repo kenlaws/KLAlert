@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double KLAlertVersionNumber;
-FOUNDATION_EXPORT const unsigned char KLAlertVersionString[];
+FOUNDATION_EXPORT double klAlertVersionNumber;
+FOUNDATION_EXPORT const unsigned char klAlertVersionString[];
 

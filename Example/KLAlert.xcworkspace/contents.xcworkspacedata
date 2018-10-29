@@ -2,9 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:KLAlert.xcodeproj">
+      location = "group:/Developer/klAlert/Example/klAlert.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:klAlert.xcodeproj">
    </FileRef>
 </Workspace>

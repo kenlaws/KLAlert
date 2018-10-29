@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C85C82622315EFC3C052EFB /* Pods_klAlert_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6691BB54835B3530272488C3 /* Pods_klAlert_Tests.framework */; };
 		3446FA7BED5C799D5BCE3EAF /* Pods_KLAlert_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 680DCE40A2485CAAEEB37A21 /* Pods_KLAlert_Tests.framework */; };
+		40D44235D8373938C232CBA5 /* Pods_klAlert_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D056BE6821EA4C4C43EBA3A9 /* Pods_klAlert_Example.framework */; };
 		515413F0C2990AB8D8898F97 /* Pods_KLAlert_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816314AC7F2746FF75818E56 /* Pods_KLAlert_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -31,21 +33,27 @@
 		0B1F3EE7043F8F1C7B0AC458 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		316037AB9D4061EA75948A12 /* Pods-KLAlert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLAlert_Example.release.xcconfig"; path = "Target Support Files/Pods-KLAlert_Example/Pods-KLAlert_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3BA55AF790D4C8BA2FFFDB62 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* KLAlert_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KLAlert_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* klAlert_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = klAlert_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* KLAlert_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KLAlert_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* klAlert_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = klAlert_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		616F64D0EC814A727495B4D0 /* Pods-klAlert_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klAlert_Tests.debug.xcconfig"; path = "Target Support Files/Pods-klAlert_Tests/Pods-klAlert_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		663E01C998412D68C65B8A39 /* Pods-klAlert_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klAlert_Tests.release.xcconfig"; path = "Target Support Files/Pods-klAlert_Tests/Pods-klAlert_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6691BB54835B3530272488C3 /* Pods_klAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_klAlert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		680DCE40A2485CAAEEB37A21 /* Pods_KLAlert_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLAlert_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7964754978DE312578C229C6 /* Pods-klAlert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klAlert_Example.release.xcconfig"; path = "Target Support Files/Pods-klAlert_Example/Pods-klAlert_Example.release.xcconfig"; sourceTree = "<group>"; };
 		816314AC7F2746FF75818E56 /* Pods_KLAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F92CC167D5ADBF2EA294C61 /* Pods-KLAlert_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLAlert_Tests.release.xcconfig"; path = "Target Support Files/Pods-KLAlert_Tests/Pods-KLAlert_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B707E2F2C5AFFADC9A5F0BB0 /* klAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = klAlert.podspec; path = ../klAlert.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C2568CAE0FECE5B48013F7D1 /* Pods-KLAlert_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLAlert_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KLAlert_Tests/Pods-KLAlert_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D056BE6821EA4C4C43EBA3A9 /* Pods_klAlert_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_klAlert_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37FF5E9A8CC6A2E0FC5D44A /* Pods-klAlert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-klAlert_Example.debug.xcconfig"; path = "Target Support Files/Pods-klAlert_Example/Pods-klAlert_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F7CF41AD47C8244F684152F5 /* Pods-KLAlert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLAlert_Example.debug.xcconfig"; path = "Target Support Files/Pods-KLAlert_Example/Pods-KLAlert_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				515413F0C2990AB8D8898F97 /* Pods_KLAlert_Example.framework in Frameworks */,
+				40D44235D8373938C232CBA5 /* Pods_klAlert_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3446FA7BED5C799D5BCE3EAF /* Pods_KLAlert_Tests.framework in Frameworks */,
+				0C85C82622315EFC3C052EFB /* Pods_klAlert_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +86,10 @@
 				316037AB9D4061EA75948A12 /* Pods-KLAlert_Example.release.xcconfig */,
 				C2568CAE0FECE5B48013F7D1 /* Pods-KLAlert_Tests.debug.xcconfig */,
 				8F92CC167D5ADBF2EA294C61 /* Pods-KLAlert_Tests.release.xcconfig */,
+				E37FF5E9A8CC6A2E0FC5D44A /* Pods-klAlert_Example.debug.xcconfig */,
+				7964754978DE312578C229C6 /* Pods-klAlert_Example.release.xcconfig */,
+				616F64D0EC814A727495B4D0 /* Pods-klAlert_Tests.debug.xcconfig */,
+				663E01C998412D68C65B8A39 /* Pods-klAlert_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -84,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for KLAlert */,
+				607FACD21AFB9204008FA782 /* Example for klAlert */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				29B1B7313D3EBBB658BCCDF7 /* Pods */,
@@ -95,13 +109,13 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* KLAlert_Example.app */,
-				607FACE51AFB9204008FA782 /* KLAlert_Tests.xctest */,
+				607FACD01AFB9204008FA782 /* klAlert_Example.app */,
+				607FACE51AFB9204008FA782 /* klAlert_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for KLAlert */ = {
+		607FACD21AFB9204008FA782 /* Example for klAlert */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -111,7 +125,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for KLAlert";
+			name = "Example for klAlert";
 			path = KLAlert;
 			sourceTree = "<group>";
 		};
@@ -155,6 +169,8 @@
 			children = (
 				816314AC7F2746FF75818E56 /* Pods_KLAlert_Example.framework */,
 				680DCE40A2485CAAEEB37A21 /* Pods_KLAlert_Tests.framework */,
+				D056BE6821EA4C4C43EBA3A9 /* Pods_klAlert_Example.framework */,
+				6691BB54835B3530272488C3 /* Pods_klAlert_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,9 +178,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* KLAlert_Example */ = {
+		607FACCF1AFB9204008FA782 /* klAlert_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KLAlert_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "klAlert_Example" */;
 			buildPhases = (
 				2610C118F2526A26AFD73A88 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -176,14 +192,14 @@
 			);
 			dependencies = (
 			);
-			name = KLAlert_Example;
+			name = klAlert_Example;
 			productName = KLAlert;
-			productReference = 607FACD01AFB9204008FA782 /* KLAlert_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* klAlert_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* KLAlert_Tests */ = {
+		607FACE41AFB9204008FA782 /* klAlert_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KLAlert_Tests" */;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "klAlert_Tests" */;
 			buildPhases = (
 				0B1591A8E5216FC99410FF5B /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
@@ -195,9 +211,9 @@
 			dependencies = (
 				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
-			name = KLAlert_Tests;
+			name = klAlert_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* KLAlert_Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* klAlert_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -223,7 +239,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "KLAlert" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "klAlert" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -236,8 +252,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* KLAlert_Example */,
-				607FACE41AFB9204008FA782 /* KLAlert_Tests */,
+				607FACCF1AFB9204008FA782 /* klAlert_Example */,
+				607FACE41AFB9204008FA782 /* klAlert_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -278,7 +294,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KLAlert_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-klAlert_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -300,7 +316,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KLAlert_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-klAlert_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -315,18 +331,18 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KLAlert_Example/Pods-KLAlert_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KLAlert/KLAlert.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-klAlert_Example/Pods-klAlert_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/klAlert/klAlert.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KLAlert.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/klAlert.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KLAlert_Example/Pods-KLAlert_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-klAlert_Example/Pods-klAlert_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -354,7 +370,7 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* KLAlert_Example */;
+			target = 607FACCF1AFB9204008FA782 /* klAlert_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -484,7 +500,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7CF41AD47C8244F684152F5 /* Pods-KLAlert_Example.debug.xcconfig */;
+			baseConfigurationReference = E37FF5E9A8CC6A2E0FC5D44A /* Pods-klAlert_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9W4CY5VCCP;
@@ -502,7 +518,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 316037AB9D4061EA75948A12 /* Pods-KLAlert_Example.release.xcconfig */;
+			baseConfigurationReference = 7964754978DE312578C229C6 /* Pods-klAlert_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9W4CY5VCCP;
@@ -520,7 +536,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2568CAE0FECE5B48013F7D1 /* Pods-KLAlert_Tests.debug.xcconfig */;
+			baseConfigurationReference = 616F64D0EC814A727495B4D0 /* Pods-klAlert_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 9W4CY5VCCP;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -537,13 +553,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KLAlert_Example.app/KLAlert_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/klAlert.temp_caseinsensitive_rename_Example.app/klAlert.temp_caseinsensitive_rename_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F92CC167D5ADBF2EA294C61 /* Pods-KLAlert_Tests.release.xcconfig */;
+			baseConfigurationReference = 663E01C998412D68C65B8A39 /* Pods-klAlert_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 9W4CY5VCCP;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -556,14 +572,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KLAlert_Example.app/KLAlert_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/klAlert.temp_caseinsensitive_rename_Example.app/klAlert.temp_caseinsensitive_rename_Example";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "KLAlert" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "klAlert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -572,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KLAlert_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "klAlert_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
@@ -581,7 +597,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KLAlert_Tests" */ = {
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "klAlert_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,

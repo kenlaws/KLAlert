@@ -1,9 +1,9 @@
 use_frameworks!
 
-target 'KLAlert_Example' do
-  pod 'KLAlert', :path => '../'
+target 'klAlert_Example' do
+  pod 'klAlert', :path => '../'
 
-  target 'KLAlert_Tests' do
+  target 'klAlert_Tests' do
     inherit! :search_paths
 
     

@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="KLAlert_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="klAlert_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -29,8 +29,19 @@
                                     <action selector="handleOneBtnAlert" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dzn-GJ-2rB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zov-dK-bsE">
+                                <rect key="frame" x="111" y="209" width="153" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                <state key="normal" title="Confirmation Alert">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleTwoBtnAlert" destination="vXZ-lx-hvc" eventType="touchUpInside" id="epP-uJ-Oba"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEc-aB-gR6">
-                                <rect key="frame" x="103" y="209" width="169" height="30"/>
+                                <rect key="frame" x="103" y="289" width="169" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
                                 <state key="normal" title="Multiple Button Alert">
@@ -41,7 +52,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0f-sh-2PJ">
-                                <rect key="frame" x="134.5" y="289" width="106" height="30"/>
+                                <rect key="frame" x="134.5" y="369" width="106" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
                                 <state key="normal" title="Popup Alert">
@@ -55,15 +66,18 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="k8t-rT-wq3" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="127-Bk-AEa"/>
+                            <constraint firstItem="Zov-dK-bsE" firstAttribute="top" secondItem="k8t-rT-wq3" secondAttribute="bottom" constant="50" id="NeN-vu-tyz"/>
                             <constraint firstItem="k8t-rT-wq3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="107" id="NhH-BD-Gs4"/>
+                            <constraint firstItem="zEc-aB-gR6" firstAttribute="top" secondItem="Zov-dK-bsE" secondAttribute="bottom" constant="50" id="dlq-I7-2Hg"/>
                             <constraint firstItem="o0f-sh-2PJ" firstAttribute="centerX" secondItem="zEc-aB-gR6" secondAttribute="centerX" id="htd-e7-KbW"/>
-                            <constraint firstItem="zEc-aB-gR6" firstAttribute="top" secondItem="k8t-rT-wq3" secondAttribute="bottom" constant="50" id="la3-RH-G40"/>
                             <constraint firstItem="zEc-aB-gR6" firstAttribute="centerX" secondItem="k8t-rT-wq3" secondAttribute="centerX" id="lpk-bb-zP7"/>
                             <constraint firstItem="o0f-sh-2PJ" firstAttribute="top" secondItem="zEc-aB-gR6" secondAttribute="bottom" constant="50" id="mBF-GB-7VL"/>
+                            <constraint firstItem="Zov-dK-bsE" firstAttribute="centerX" secondItem="k8t-rT-wq3" secondAttribute="centerX" id="ouB-LL-o75"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="colorBtn" destination="zEc-aB-gR6" id="e5u-Uk-HHF"/>
+                        <outlet property="confirmBtn" destination="Zov-dK-bsE" id="eOX-JP-t9d"/>
                         <outlet property="popupBtn" destination="o0f-sh-2PJ" id="OZo-yu-UnO"/>
                     </connections>
                 </viewController>

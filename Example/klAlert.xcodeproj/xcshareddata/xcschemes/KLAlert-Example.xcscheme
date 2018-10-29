@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "KLAlert_Example.app"
-               BlueprintName = "KLAlert_Example"
-               ReferencedContainer = "container:KLAlert.xcodeproj">
+               BuildableName = "klAlert_Example.app"
+               BlueprintName = "klAlert_Example"
+               ReferencedContainer = "container:klAlert.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "KLAlert_Tests.xctest"
-               BlueprintName = "KLAlert_Tests"
-               ReferencedContainer = "container:KLAlert.xcodeproj">
+               BuildableName = "klAlert_Tests.xctest"
+               BlueprintName = "klAlert_Tests"
+               ReferencedContainer = "container:klAlert.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "KLAlert_Tests.xctest"
-               BlueprintName = "KLAlert_Tests"
-               ReferencedContainer = "container:KLAlert.xcodeproj">
+               BuildableName = "klAlert_Tests.xctest"
+               BlueprintName = "klAlert_Tests"
+               ReferencedContainer = "container:klAlert.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "KLAlert_Example.app"
-            BlueprintName = "KLAlert_Example"
-            ReferencedContainer = "container:KLAlert.xcodeproj">
+            BuildableName = "klAlert_Example.app"
+            BlueprintName = "klAlert_Example"
+            ReferencedContainer = "container:klAlert.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "KLAlert_Example.app"
-            BlueprintName = "KLAlert_Example"
-            ReferencedContainer = "container:KLAlert.xcodeproj">
+            BuildableName = "klAlert_Example.app"
+            BlueprintName = "klAlert_Example"
+            ReferencedContainer = "container:klAlert.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -99,9 +99,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "KLAlert_Example.app"
-            BlueprintName = "KLAlert_Example"
-            ReferencedContainer = "container:KLAlert.xcodeproj">
+            BuildableName = "klAlert_Example.app"
+            BlueprintName = "klAlert_Example"
+            ReferencedContainer = "container:klAlert.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

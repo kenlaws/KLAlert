@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_KLAlert_Tests : NSObject
+@interface PodsDummy_Pods_klAlert_Tests : NSObject
 @end
-@implementation PodsDummy_Pods_KLAlert_Tests
+@implementation PodsDummy_Pods_klAlert_Tests
 @end

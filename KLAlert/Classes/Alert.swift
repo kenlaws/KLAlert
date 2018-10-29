@@ -68,17 +68,27 @@ public class Alert {
 	- Parameter title?: Title at top of alert
 	- Parameter msg: Explanatory alert text
 	- Parameter buttons: Text for buttons
-	- Parameter handler: closure with an Int indicating which button was tapped (0..<n buttons.)
+	- Parameter handler: closure with an Int indicating which button was tapped (cancel = 0, 1..n buttons)
 	*/
-	public static func withButtonsAndCompletion(title: String? = nil, msg: String, buttons: [String], handler: @escaping (_ result: Int) -> ()) {
+	public static func withButtonsAndCompletion(title: String? = nil, msg: String, cancel: String? = nil, buttons: [String], handler: @escaping (_ result: Int) -> ()) {
 		let theAlert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
+		
+		if let cancel = cancel {
+			let cancelAction = UIAlertAction(title: cancel, style: .cancel) { (action) -> Void in
+				hideWindow()
+				handler(0)
+			}
+			theAlert.addAction(cancelAction)
+		}
+
 		for (idx, title) in buttons.enumerated() {
 			let action = UIAlertAction(title: title, style: .default) { (action) -> Void in
 				hideWindow()
-				handler(idx)
+				handler(idx + 1)
 			}
 			theAlert.addAction(action)
 		}
+
 		DispatchQueue.main.async {
 			showWindow()
 			controller.present(theAlert, animated: true, completion: nil)
@@ -94,7 +104,7 @@ public class Alert {
 	- Parameter msg?: Small subtitle. Can be nil
 	- Parameter cancel?: Text for "Cancel" button
 	- Parameter buttons: Array of Strings with button titles
-	- Parameter handler: closure with an Int indicating which button was tapped (cancel = 0)
+	- Parameter handler: closure with an Int indicating which button was tapped (cancel = 0, 1..n buttons)
 	*/
 	public static func asAPopupWithCompletion(source: UIView? = nil, title: String? = nil, msg: String? = nil, cancel: String? = nil, buttons: [String], handler: @escaping (_ result: Int) -> ()) {
 		let theAlert = UIAlertController(title: title, message: msg, preferredStyle: .actionSheet)
