@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,8 +20,52 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8t-rT-wq3">
+                                <rect key="frame" x="92.5" y="127" width="190" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="A Simple One Button Alert"/>
+                                <connections>
+                                    <action selector="handleOneBtnAlert" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dzn-GJ-2rB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEc-aB-gR6">
+                                <rect key="frame" x="103" y="209" width="169" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                <state key="normal" title="Multiple Button Alert">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="handleThreeBtnAlert" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zto-oC-8rG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0f-sh-2PJ">
+                                <rect key="frame" x="134.5" y="289" width="106" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="5" maxX="10" maxY="5"/>
+                                <state key="normal" title="Popup Alert">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="handlePopupAlert" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ao9-OU-esS"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k8t-rT-wq3" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="127-Bk-AEa"/>
+                            <constraint firstItem="k8t-rT-wq3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="107" id="NhH-BD-Gs4"/>
+                            <constraint firstItem="o0f-sh-2PJ" firstAttribute="centerX" secondItem="zEc-aB-gR6" secondAttribute="centerX" id="htd-e7-KbW"/>
+                            <constraint firstItem="zEc-aB-gR6" firstAttribute="top" secondItem="k8t-rT-wq3" secondAttribute="bottom" constant="50" id="la3-RH-G40"/>
+                            <constraint firstItem="zEc-aB-gR6" firstAttribute="centerX" secondItem="k8t-rT-wq3" secondAttribute="centerX" id="lpk-bb-zP7"/>
+                            <constraint firstItem="o0f-sh-2PJ" firstAttribute="top" secondItem="zEc-aB-gR6" secondAttribute="bottom" constant="50" id="mBF-GB-7VL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorBtn" destination="zEc-aB-gR6" id="e5u-Uk-HHF"/>
+                        <outlet property="popupBtn" destination="o0f-sh-2PJ" id="OZo-yu-UnO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

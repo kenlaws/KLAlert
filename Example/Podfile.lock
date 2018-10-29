@@ -1,5 +1,5 @@
 PODS:
-  - KLAlert (0.1.0)
+  - KLAlert (1.0.5)
 
 DEPENDENCIES:
   - KLAlert (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KLAlert: 0fa20a2e04a7c1a2ef6cb6e094e5579e4407e2cb
+  KLAlert: 02807ddffe3f5e9b3a32a4722a3bfbc665e70fc5
 
 PODFILE CHECKSUM: 6d6ed5c41d0db2db816e13e602c5bf45639c9cfd
 
