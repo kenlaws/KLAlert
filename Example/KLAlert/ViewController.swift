@@ -22,17 +22,17 @@ class ViewController: UIViewController {
 
 
 	@IBAction func handleOneBtnAlert() {
-		Alert.withOneButton(title: "One Button Alert",
+		Alert().withOneButton(title: "One Button Alert",
 							msg: "This is a simple one-button alert with no completion handler.",
 							btn: "OK")
 	}
 
 
 	@IBAction func handleTwoBtnAlert() {
-		Alert.withButtonsAndCompletion(title: "Confirmation",
+		Alert().withButtons(title: "Confirmation",
 									   msg: "Here's a sample to confirm an action. The completion handler gets 1 for OK, 0 for Cancel.",
 									   cancel: "Cancel",
-									   buttons: ["OK"]) { (result) in
+									   buttons: ["OK"]) { [unowned self] (result) in
 										guard result == 1 else { return }
 										
 										var transform = CATransform3DIdentity
@@ -52,10 +52,10 @@ class ViewController: UIViewController {
 
 
 	@IBAction func handleThreeBtnAlert() {
-		Alert.withButtonsAndCompletion(title: "Multiple Buttons",
+		Alert().withButtons(title: "Multiple Buttons",
 									   msg: "Here's a sample with multiple buttons. The completion handler gets an index indicating which button was pressed.",
 									   cancel: "Cancel",
-									   buttons: ["Red","Green","Blue"]) { (color) in
+									   buttons: ["Red","Green","Blue"]) { [unowned self] (color) in
 										// We'll let 0 - Cancel just fall through.
 										switch color {
 										case 1:
@@ -72,11 +72,11 @@ class ViewController: UIViewController {
 
 
 	@IBAction func handlePopupAlert() {
-		Alert.asAPopupWithCompletion(source:popupBtn,
+		Alert().asAPopup(source:popupBtn,
 									 title: "Popup Alert",
 									 msg: "This is a popup on iPhones and a popover on iPads. The completion handler gets an index indicating which button was pressed.",
 									 cancel: "Cancel",
-									 buttons: ["Red","Green","Blue"]) { (color) in
+									 buttons: ["Red","Green","Blue"]) { [unowned self] (color) in
 										// We'll let 0 - Cancel just fall through.
 										switch color {
 										case 1:

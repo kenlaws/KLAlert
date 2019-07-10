@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'klAlert'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = 'Simple one call alerts with completions in Swift.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/kenlaws/klAlert.git', :tag => s.version.to_s }
   s.social_media_url   = "https://twitter.com/kenlaws"
 
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'klAlert/Classes/**/*'

@@ -7,9 +7,9 @@
 
 ## Example
 
-UIAlertController is nice and all, but it means having to write a few lines of code where before one call was often all you'd need. klAlert is a series of static functions that let you create and handle the results of a modern alert in just one call:
+UIAlertController is nice and all, but it means having to write a few lines of code where before one call was often all you'd need. klAlert is a class with functions that let you create and handle the results of a modern alert in just one call:
 ```	
-Alert.withButtonsAndCompletion(title: "Confirm",
+Alert().withButtons(title: "Confirm",
 				msg: "Confirm an action.",
 				cancel: "Cancel",
 				buttons: ["OK"]) { (index) in
@@ -17,7 +17,7 @@ Alert.withButtonsAndCompletion(title: "Confirm",
 					// Do the thing
 				}
 ```
-## Current Version: 1.0.7
+## Current Version: 1.0.8
 A complete restructuring. 
 
 ## Installation
@@ -34,16 +34,16 @@ pod "klAlert"
 
 ## Documentation
 Until I have ample time, note that you can find at least simple examples of usage in the Demo app.
-### Static Functions for the Class Alert
-#### `static func withOneButton(title: String, msg: String, btn: String)`
+### Functions for the Class Alert
+#### `func withOneButton(title: String, msg: String, btn: String)`
 Shows an alert with one button. There is no completion hander. It simply vanishes when the user taps the button.  
 **Parameters**  
 *title*: Title at top of alert  
 *msg*: Explanatory alert text  
 *btn*: Text for the button  
 
-#### `static func withButtonsAndCompletion(title: String?, msg: String, cancel: String?, buttons: [String], handler: @escaping (_ result: Int) -> ())`
-Shows an alert with one or more buttons. After a tap, it runs the completion handler using an index to indicate which button the user pressed. Buttons are displayed from top to bottom or left to right if there are only two. Cancel is always displayed at the top or left.  
+#### `func withButtons(title: String?, msg: String, cancel: String?, buttons: [String], handler: @escaping (_ result: Int) -> ())`
+Shows an alert with one or more buttons. After a tap, it runs the completion handler using an index to indicate which button the user pressed. Buttons are displayed from top to bottom or left to right if there are only two. Cancel is always displayed at the bottom or left.  
 **Parameters**  
 *title?*: Title at top of alert (optional)
 *msg*: Explanatory alert text
@@ -51,7 +51,7 @@ Shows an alert with one or more buttons. After a tap, it runs the completion han
 *buttons*: An array of strings for the button titles  
 *handler*: closure with an Int indicating which button was tapped (cancel = 0, btn1 = 1...)  
 
-#### `static func asAPopupWithCompletion(source: UIView?, title: String?, msg: String?, cancel: String?, buttons: [String], handler: @escaping (_ result: Int) -> ())`
+#### `func asAPopup(source: UIView?, title: String?, msg: String?, cancel: String?, buttons: [String], handler: @escaping (_ result: Int) -> ())`
 Shows a popup alert with a number of buttons, runs the completion handler once the user makes a choice and returns the index of the tapped button (cancel = 0.) 
 **Parameters**  
 *source?*: The view from which the popover emanates (REQUIRED if presented on an iPad, otherwise optional)  

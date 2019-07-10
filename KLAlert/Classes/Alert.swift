@@ -11,34 +11,31 @@ let Device = UIDevice.current.userInterfaceIdiom
 
 public class Alert {
 	
-	static var alertWindow: UIWindow = {
-		let frame = UIApplication.shared.keyWindow?.frame ?? UIScreen.main.bounds
-		let window = UIWindow(frame: frame)
-		window.windowLevel = UIWindow.Level.alert
-		window.isOpaque = false
-		window.rootViewController = controller
+	var alertWindow: UIWindow
+	var controller:AlertViewController
 
-		window.isHidden = true
-
-		return window
-	}()
-
-
-	static var controller:AlertViewController = {
-		let controller = AlertViewController()
+	public init() {
+		controller = AlertViewController()
 		controller.view.backgroundColor = UIColor.clear
-		return controller
-	}()
+
+		let frame = UIApplication.shared.keyWindow?.frame ?? UIScreen.main.bounds
+		alertWindow = UIWindow(frame: frame)
+		alertWindow.windowLevel = UIWindow.Level.alert
+		alertWindow.isOpaque = false
+		alertWindow.rootViewController = controller
+
+		alertWindow.isHidden = true
+	}
 
 
-	static func showWindow() {
+	func showWindow() {
 		alertWindow.isHidden = false
 		controller.view.setNeedsLayout()
 		controller.view.layoutIfNeeded()
 	}
 
 
-	static func hideWindow() {
+	func hideWindow() {
 		alertWindow.isHidden = true
 	}
 
@@ -49,15 +46,15 @@ public class Alert {
 	- Parameter msg: Explanatory alert text
 	- Parameter btn: Text for the button
 	*/
-	public static func withOneButton(title: String, msg: String, btn: String) {
+	public func withOneButton(title: String, msg: String, btn: String) {
 		let theAlert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
 		let defaultAction = UIAlertAction(title: btn, style: .default) { (action) -> Void in
-			hideWindow()
+			self.hideWindow()
 		}
 		theAlert.addAction(defaultAction)
 		DispatchQueue.main.async {
-			showWindow()
-			controller.present(theAlert, animated: true, completion: nil)
+			self.showWindow()
+			self.controller.present(theAlert, animated: true, completion: nil)
 		}
 	}
 	
@@ -70,12 +67,12 @@ public class Alert {
 	- Parameter buttons: Text for buttons
 	- Parameter handler: closure with an Int indicating which button was tapped (cancel = 0, 1..n buttons)
 	*/
-	public static func withButtonsAndCompletion(title: String? = nil, msg: String, cancel: String? = nil, buttons: [String], handler: @escaping (_ result: Int) -> ()) {
+	public func withButtons(title: String? = nil, msg: String, cancel: String? = nil, buttons: [String], handler: @escaping (_ result: Int) -> ()) {
 		let theAlert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
 		
 		if let cancel = cancel {
 			let cancelAction = UIAlertAction(title: cancel, style: .cancel) { (action) -> Void in
-				hideWindow()
+				self.hideWindow()
 				handler(0)
 			}
 			theAlert.addAction(cancelAction)
@@ -83,15 +80,15 @@ public class Alert {
 
 		for (idx, title) in buttons.enumerated() {
 			let action = UIAlertAction(title: title, style: .default) { (action) -> Void in
-				hideWindow()
+				self.hideWindow()
 				handler(idx + 1)
 			}
 			theAlert.addAction(action)
 		}
 
 		DispatchQueue.main.async {
-			showWindow()
-			controller.present(theAlert, animated: true, completion: nil)
+			self.showWindow()
+			self.controller.present(theAlert, animated: true, completion: nil)
 		}
 	}
 
@@ -106,7 +103,7 @@ public class Alert {
 	- Parameter buttons: Array of Strings with button titles
 	- Parameter handler: closure with an Int indicating which button was tapped (cancel = 0, 1..n buttons)
 	*/
-	public static func asAPopupWithCompletion(source: UIView? = nil, title: String? = nil, msg: String? = nil, cancel: String? = nil, buttons: [String], handler: @escaping (_ result: Int) -> ()) {
+	public func asAPopup(source: UIView? = nil, title: String? = nil, msg: String? = nil, cancel: String? = nil, buttons: [String], handler: @escaping (_ result: Int) -> ()) {
 		let theAlert = UIAlertController(title: title, message: msg, preferredStyle: .actionSheet)
 		if Device == .pad {
 			guard let sourceView = source else {
@@ -120,7 +117,7 @@ public class Alert {
 		
 		for (idx, title) in buttons.enumerated() {
 			let action = UIAlertAction(title: title, style: .default) { (action) -> Void in
-				hideWindow()
+				self.hideWindow()
 				handler(idx + 1)
 			}
 			theAlert.addAction(action)
@@ -128,19 +125,19 @@ public class Alert {
 
 		if let cancel = cancel {
 			let cancelAction = UIAlertAction(title: cancel, style: .cancel) { (action) -> Void in
-				hideWindow()
+				self.hideWindow()
 				handler(0)
 			}
 			theAlert.addAction(cancelAction)
 		}
 
 		DispatchQueue.main.async {
-			showWindow()
-			controller.present(theAlert, animated: true, completion: {
+			self.showWindow()
+			self.controller.present(theAlert, animated: true, completion: {
 				// The popover controller actually sets the sourceView's controller as the parent,
 				// so we have to get rid of our overlay window in this one case.
 				if Device == .pad {
-					hideWindow()
+					self.hideWindow()
 				}
 			})
 		}
